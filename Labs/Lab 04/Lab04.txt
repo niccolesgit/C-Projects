@@ -1,0 +1,12 @@
+cd /mnt/c/Users/leen8/Dropbox/"PC (2)"/Documents/GitHub/Submitty
+
+find . -type f -name "*.c" -o -name "*.cc" -o -name "*.cpp" -o -name "*.cxx" -o -name "*.c++" -o -name "*.h" -o -name "*.hxx" -o -name "*.php" -o -name "*.py"
+
+find . -regextype sed -regex ".*/[a-z,A-Z,0-9\-]\{4,7\}\.c" -o -regex ".*/[a-z,A-Z,0-9\-]\{4,7\}\.cc" -o -regex ".*/[a-z,A-Z,0-9\-]\{4,7\}\.cpp" -o -regex ".*/[a-z,A-Z,0-9\-]\{4,7\}\.cxx" -o -regex ".*/[a-z,A-Z,0-9\-]\{4,7\}\.c++" -o -regex ".*/[a-z,A-Z,0-9\-]\{4,7\}\.h" -o -regex ".*/[a-z,A-Z,0-9\-]\{4,7\}\.hxx" -o -regex ".*/[a-z,A-Z,0-9\-]\{4,7\}\.php" -o -regex ".*/[a-z,A-Z,0-9\-]\{4,7\}\.py"
+
+grep -R 'line_ for line_ in line_list if len(line_) > 0' --include="*.py"
+
+find . -type f -name "*.py" -exec sed -i 's/old/new/g' {} +
+
+cd /mnt/c/Users/leen8/Dropbox/"PC (2)"/Documents/CompOrg/Labs/"Lab 04"
+
